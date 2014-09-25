@@ -38,7 +38,13 @@ head.ready(function() {
     $('#form4').validate();
     $('#form5 form').validate();
 
-
+    $('.fancybox').fancybox({
+        helpers:{
+            overlay: {
+                locked: false
+            }
+        }
+    });
 
 //
 //    $('.fancybox').fancybox({

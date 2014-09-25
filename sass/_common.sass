@@ -77,8 +77,8 @@ body
   position: relative
 input, textarea
   +placeholder
-    font-size: 18px
-    color: #554628
+    font-size: 16px
+    color: #787878
     +pfl
 %in
   max-width: 1200px
@@ -218,8 +218,7 @@ input, textarea
 
 .frm
   height: 250px
-  padding-top: 5px
-  margin-top: 5px
+  padding-top: 30px
   background: rgba(#3b3b3b, .4)
 
   //box-sizing: border-box
@@ -247,15 +246,14 @@ form
     height: 50px
     background: #ffffff
     display: block
-    margin: auto auto 10px
+    margin: auto auto 20px
     +border-radius(4px)
     +background-clip(padding-box)
     +box
     font-size: 18px
-    border: 2px solid #e5e1db
   .radio-toolbar
     position: absolute
-    top: 200px
+    top: 230px
     left: -277px
     width: 134px
     height: 70px
@@ -298,39 +296,50 @@ form
 
 
 
+
 .button
   +box
   +border-radius(4px)
-  padding: 0 47px
-  height: 80px
+  width: 280px
+  height: 70px
   color: #d2b978
   +single-text-shadow
   display: block
   margin: 20px auto auto
   font-family: 'pf_highway_sans_probold'
   font-size: 36px
-  background: none
-  +background-clip(padding-box)
-  +border-radius(4px)
+  background: url(../img/button-form_bg.png) no-repeat
   letter-spacing: 1px
   text-decoration: none
-  border: solid 2px rgb(30,30,30)
 
   &:hover
-    +box-shadow(inset 0 0 3px 1px rgb(30,30,30))
+    +box-shadow(inset 0 0 5px 2px #d2b978)
 // common blocks
 
-.button--red
-  margin-top: 35px
-  display: inline-block
-  padding: 15px 49px 0
-  border: none
-  color: #ffffff
-  +box-shadow(inset 0 -4px 0 rgba(130,0,0,.9))
-  +background-image(linear-gradient(to bottom, #e53131 0%, #bd0909 100%))
-  &:hover
-    background: lighten(#bd0909, 10%)
-    +box-shadow(0 0 0 0)
+.button--video
+  background: url(../img/button-video_bg.png) no-repeat
+  width: 190px
+  height: 50px
+  +pfl
+  font-size: 18px
+  color: #554628
+  text-transform: uppercase
+  text-align: center
+  padding-top: 14px
+  +box
+  margin-top: 0
+  margin-left: 36px
+.button--specs
+  background: url(../img/specs-button_bg.png)
+  width: 240px
+  height: 70px
+  color: #1e1e1e
+  font-size: 36px
+  font-family: 'pf_highway_sans_probold'
+  +box
+  display: block
+  text-align: center
+  padding-top: 10px
 
 .button--yellow
   margin-top: 35px
