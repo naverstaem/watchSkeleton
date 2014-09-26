@@ -247,10 +247,12 @@ form
     background: #ffffff
     display: block
     margin: auto auto 20px
-    +border-radius(4px)
-    +background-clip(padding-box)
     +box
     font-size: 18px
+    border: 2px solid #dbdbdb
+    +border-radius(4px)
+    +background-clip(padding-box)
+
   .radio-toolbar
     position: absolute
     top: 230px
@@ -341,17 +343,24 @@ form
   text-align: center
   padding-top: 10px
 
-.button--yellow
-  margin-top: 35px
+.button--red
+  margin-top: 25px
   font-size: 24px
   display: inline-block
-  padding: 15px 49px 0
+  padding: 20px 71px
   border: none
+  font-family: 'pf_highway_sans_probold'
   color: #1e1e1e
-  +box-shadow(inset 0 -4px 0 rgba(160,120,20,.4))
-  +background-image(linear-gradient(to bottom, #fff5af 0%, #ffbd00 100%))
+  +border-radius(4px)
+  +background-clip(padding-box)
+  +box-shadow(inset 0 -4px 0 rgba(150,110,90,.45))
+  +background-image(linear-gradient(bottom, #d1956d 0%, #f9c7a9 30.73%, #c78163 100%))
+
+
+
+
   &:hover
-    background: lighten(#ffbd00, 10%)
+    background: lighten(#c78163, 10%)
     +box-shadow(0 0 0 0)
 
 
